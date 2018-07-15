@@ -183,6 +183,7 @@ class Map extends Component {
       var clientSecret = "LMQRUTKPWSYCVO1ATHCMFT5A1AC3XT5Z1LKS10MH0HJP3LUM";
       var request = "https://api.foursquare.com/v2/venues/search?client_id=" + clientId + "&client_secret=" + clientSecret + "&v=20180323&ll=" + Locations[i].coordinates.lat+','+Locations[i].coordinates.lng + "&limit=1";
       // send & fetch the data from FourSquare API
+try{
       fetch(request).then(function (response) {
         if (response.status !== 200) {
             return;
@@ -191,8 +192,13 @@ class Map extends Component {
         response.json().then(function (data){
               // check if the API is working
               Locations[i].infoWindowData = data.response.venues[0];
+
     });
+
       });
+}catch(e){
+  console.log("error when fetching the data");
+}
     }
   }
   render() {
