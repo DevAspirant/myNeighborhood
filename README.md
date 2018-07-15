@@ -1,6 +1,8 @@
 # My favorite Neighborhood Map (React) Project
  My favorite Neighborhood places Map is a single page app was built by react and google map that list Jeddah City favorite locations.
 
+![screen shot 2018-07-15 at 9 30 49 am](https://user-images.githubusercontent.com/1786534/42731256-fa95e9b6-8811-11e8-8eff-c8fbad437633.png)
+
 ## how to install the project
 * download the project.  
 * open terminal application
